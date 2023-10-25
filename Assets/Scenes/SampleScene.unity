@@ -332,12 +332,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e786aae773855274583cd6e29bd5c3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePassed: 0
   myEnnemy: {fileID: 8607136839849436936, guid: 380c184ecf7028c47902e62eb91c4e93, type: 3}
-  myPattern: {fileID: 0}
-  myWarning: {fileID: 0}
+  myPattern: {fileID: -3122597656133093457, guid: eb566000549af654f9d3dc07e377fd36, type: 3}
+  myWarning: {fileID: 1965163817870142946, guid: 1bab81bb695faf44493e8055d61f4901, type: 3}
   nbEnnemy: 0
   myPlayer: {fileID: 983346836}
+  myBoss: {fileID: 1800820496554247791, guid: 4984a8aecf4310d48a6883a11e263ad3, type: 3}
+  wave: 0
 --- !u!4 &336097874
 Transform:
   m_ObjectHideFlags: 0
@@ -729,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monScore: {fileID: 0}
-  monUI: {fileID: 0}
+  monUI: {fileID: 214207501}
 --- !u!1 &1453840009
 GameObject:
   m_ObjectHideFlags: 0

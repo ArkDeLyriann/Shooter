@@ -164,7 +164,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!114 &8607136839849436936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemiBody: {fileID: -6087150416437164875}
   ennemiTransform: {fileID: 6488187506806844336}
+  left: {x: 2, y: -1, z: 0}
+  right: {x: -2, y: -1, z: 0}
+  goingLeft: 0
+  timePassed: 0

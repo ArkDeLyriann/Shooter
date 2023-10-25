@@ -8,10 +8,11 @@ public class ennemy : MonoBehaviour
 
     public Rigidbody2D ennemiBody;
     public Transform ennemiTransform;
-    public Vector3 left = new Vector3(2, -1, 0);
-    public Vector3 right = new Vector3(-2,-1,0);
+    public Vector3 left = new Vector3(2, 0, 0);
+    public Vector3 right = new Vector3(-2,0,0);
     public bool goingLeft;
     public float timePassed=0f;
+    private float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +27,16 @@ public class ennemy : MonoBehaviour
     void Update()
     {
 
+        timer += Time.deltaTime;
+
+
+
+        if (timer >3 )
+        {
+            ennemiBody.position = new Vector3(ennemiBody.position.x, ennemiBody.position.y - 1, 0);
+            timer = 0;
+        }
         
-            
-       
-      
 
 
         if (ennemiBody.position.x < -9)
@@ -43,11 +50,7 @@ public class ennemy : MonoBehaviour
             
         }
 
-        if (ennemiBody.position.y < -5)
-        {
-            ennemiBody.position = new Vector3(ennemiBody.position.x, 5, 0);
-            ennemiBody.velocity = new Vector3(ennemiBody.velocity.x*-1,ennemiBody.velocity.y,0);
-        }
+        
        
     }
 }

@@ -85,6 +85,17 @@ public class MovementEtTir : MonoBehaviour
 
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Loot")
+        {
+
+            monScore.AddScore(100);
+
+            Destroy(collision.gameObject);
+
+        }
+    }
 
     public void Shoot()
     {
@@ -99,7 +110,7 @@ public class MovementEtTir : MonoBehaviour
                 Instantiate(bullet, descends, parent.rotation);
             }
         }
-        if(monScore.scoreActuel > 500 )//&& monScore.scoreActuel < 1000)
+        if(monScore.scoreActuel > 500 )            //&& monScore.scoreActuel < 1000)
         {
             if (!isUp)
             {

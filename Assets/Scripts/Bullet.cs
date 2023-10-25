@@ -38,6 +38,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Ennemy") { 
             Destroy(collision.gameObject);
             ennemyData.nbEnnemy--;
+            
 
                 monCadeau.monDrop();
             
